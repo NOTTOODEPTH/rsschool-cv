@@ -1,21 +1,178 @@
+@font-face {
+    font-family: Tiro Gurmukhi;
+    src: url("assets/fonts/TiroGurmukhi-Italic.ttf");
+}
+
+@font-face {
+    font-family: Tiro Gurmukhi2;
+    src: url("assets/fonts/TiroGurmukhi-Regular.ttf");
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+
+header {
+    background-color: black;
+}
+
+.nav-list {
+    margin: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
 }
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-left {
+    width: 55%;
+}
+
+.content-right {
+    width: 25%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    line-height: 50px;
+    transition: .3s;
+}
+
+.nav-item a {
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
 a:link {
-    color: #299949;
+    text-decoration: none;
+    color: #829985;
+    transition: color 0.5s;
 }
+
 a:visited {
-    color: #299949;
+    color: #829985;
 }
+
 a:hover {
-    color: #299949;
+    color: #9e00af;
 }
-a:active {
-    color: #dd4993;
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
+
+pre {
+    margin: 0;
+    white-space: pre-line;
+}
+
 body {
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/754/917/296/manga-oyasumi-punpun-monochrome-punpun-onodera-wallpaper-preview.jpg);
+    font-family: 'Tiro Gurmukhi2', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #522162;
+    margin: 0;
+    padding: 0;
+    /*background-image: url();
     background-size: 100%;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #9e00af;
+}
+
+.name {
+    font-family: 'Tiro Gurmukhi', serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #dc0707;
+}
+
+.position {
+    font-family: 'Tiro Gurmukhi', serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #dc0707;
+}
+
+.faculty, .previously-position {
+    font-family: 'Tiro Gurmukhi2', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #797878;
+    letter-spacing: 2px;
+}
+
+.faculty, .previously-position {
+    font-family: 'Tiro Gurmukhi2', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8c8c8c;
+    letter-spacing: 3px;
+}
+
+.place, .timeline {
+    font-family: 'Tiro Gurmukhi2', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #505050;
+    letter-spacing: 1px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+footer {
+    font-family: 'Tiro Gurmukhi', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #522162;
+}
+
+.footer__logo {
+    width: auto;
+    height: 50px;
+}
+
+.github__logo {
+    width: 70px;
+    height: 70px;
 }
